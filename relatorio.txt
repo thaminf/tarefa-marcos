@@ -11,3 +11,25 @@ Cada função, como inserir, consultar, alterar ou desativar, valida os dados re
 3. Logs: 
    O log é uma maneira de documentar o que foi feito no sistema, como a inserção ou alteração de um produto.
 Ele salva informações como quem realizou a ação, o que foi feito e quando aconteceu. Isso ajuda a rastrear mudanças no sistema.
+
+PASSO A PASSO:
+
+1. Usamos o código atualizado, fornecido pelo professor.
+Aqui está um relatório simplificado sobre as alterações realizadas no Model e Controller do CRUD de Produtos:
+2. Para a validação, cada método agora verifica se os dados necessários estão presentes antes de realizar a sua função. Por exemplo, no método alterar(), é verificado se o `id` do produto foi inserido.
+
+3. Os dados são recebidos, validados e enviados para os métodos da Model (inserir, consultar, alterar, desativar). Exemplos de verificação de dados foram adicionados para garantir que está tudo dentro dos conformes.
+
+
+Alterações na Model
+1. Método inserir agora insere produtos na tabela e registra logs de sucesso ou erro. Caso a inserção falhe, um código de erro é retornado.
+
+2. Método consultar agora possui filtros queforam adicionados para a consulta de produtos, permitindo buscar produtos com base em infos específicas.
+
+3. Método alterar, apenas os campos fornecidos pelo frontend são atualizados. O ID do produto é validado antes de realizar a alteração.
+
+4. Método desativar, o status do produto é atualizado para "D" (desativado). Mensagens de sucesso ou erro são retornadas.
+
+
+
+
