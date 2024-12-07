@@ -1,0 +1,13 @@
+Relatório de implementação de produtos
+
+Explicação do Desenvolvimento
+1. Controller:
+   A Controller é responsável por receber as solicitações do usuário e repassá-las para a Model.
+Cada função, como inserir, consultar, alterar ou desativar, valida os dados recebidos antes de passar para a Model.
+
+2. Model:  
+   A Model cuida da interação com o banco de dados. Cada método implementado no CRUD gerencia as tabelas no banco.
+
+3. Logs: 
+   O log é uma maneira de documentar o que foi feito no sistema, como a inserção ou alteração de um produto.
+Ele salva informações como quem realizou a ação, o que foi feito e quando aconteceu. Isso ajuda a rastrear mudanças no sistema.
